@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>10년차 개발자의 싸가지없는 블로그</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: #0f0f0f;
+            color: #e5e5e5;
+            font-family: "Consolas", monospace;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            padding: 30px;
+            border-bottom: 1px solid #222;
+            background-color: #111;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: #00ff88;
+        }
+
+        .container {
+            display: flex;
+            padding: 30px;
+            gap: 40px;
+        }
+
+        .sidebar {
+            width: 280px;
+            background-color: #151515;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #222;
+        }
+
+        .profile-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #00ff88;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .post {
+            background-color: #151515;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #222;
+            transition: 0.2s;
+        }
+
+        .post:hover {
+            transform: translateY(-3px);
+            border-color: #00ff88;
+        }
+
+        .post h3 {
+            margin-bottom: 10px;
+            color: #00ff88;
+        }
+
+        .post p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+            background-color: #111;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>💀 10년 굴러먹은 개발자의 블로그</h1>
+    <p>기초도 안 보고 오지 마. 여긴 실무다.</p>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <img src="https://via.placeholder.com/250x250" alt="프로필 이미지" class="profile-img">
+        <h2>👨‍💻 About Me</h2>
+        <p>
+            백엔드 10년차. <br>
+            삽질 수천 번. 장애 수십 번. <br>
+            모르면 배우면 되고, 모른 척하면 망한다. <br><br>
+            Java, DB, 보안, 설계 이야기만 한다.
+        </p>
+    </aside>
+
+    <main class="content">
+
+        <div class="post">
+            <h3><a href="#">트랜잭션을 모르면 개발하지 마라</a></h3>
+            <p>
+                @Transactional이 마법인 줄 알면 오늘부로 접어라.
+                DB는 너 생각보다 똑똑하고, JVM은 더 무섭다.
+            </p>
+        </div>
+
+        <div class="post">
+            <h3><a href="#">Connection Pool 안 쓰면 반성해라</a></h3>
+            <p>
+                JDBC 직접 열고 닫고 있다고?  
+                운영 서버 터지고 울지 말고 구조부터 이해해라.
+            </p>
+        </div>
+
+        <div class="post">
+            <h3><a href="#">SQL Injection은 아직도 터진다</a></h3>
+            <p>
+                PreparedStatement 안 쓰는 순간,  
+                공격자는 이미 웃고 있다.
+            </p>
+        </div>
+
+    </main>
+
+</div>
+
+<footer>
+    © 2026. 실무에서 살아남은 개발자. 감성팔이 안 함.
+</footer>
+
+</body>
+</html>
